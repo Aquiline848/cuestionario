@@ -11,7 +11,7 @@ router.post('/api/v1/postdata', async function (req, res, next) {
         email: Email,
         guanahani: Guanahani,
         puerto_rico: Puertorico,
-        cantidad_caravelas: Carabelas,
+        cantidad_carabelas: Carabelas,
         from: From,
         liked: Liked
     });
