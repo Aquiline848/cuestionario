@@ -1,0 +1,31 @@
+{
+  "name": "cuestionario",
+  "version": "1.0.0",
+  "description": "Cuestionario historia colegio",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "npx nodemon -e *"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aquiline848/cuestionario.git#main"
+  },
+  "keywords": [
+    "Historia",
+    "Moderna",
+    "Maristas"
+  ],
+  "author": "Mario Rivas Reinoso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aquiline848/cuestionario/issues"
+  },
+  "homepage": "https://github.com/Aquiline848/cuestionario/",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs": "^2.0.0",
+    "mongoose": "^6.3.6",
+    "morgan": "^1.10.0"
+  }
+}
