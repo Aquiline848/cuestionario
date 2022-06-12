@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 mongoose
   .connect(
-      process.env.mongo,
+      "mongodb://mongo:PvsL8bIosivTxkkNxNVJ@containers-us-west-64.railway.app:5938/",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
