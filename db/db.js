@@ -19,7 +19,7 @@ const cuestionarySchema = mongoose.Schema({
     age: Number,
     guanahani: String,
     puerto_rico: String,
-    cantidad_caravelas: Number,
+    cantidad_carabelas: Number,
     from: String,
     liked: Number
 
