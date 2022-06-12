@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+dotenv.config();
 mongoose
   .connect(
       process.env.MONGO_URL,
@@ -13,7 +15,7 @@ mongoose
   .catch(function (error) {
     console.log("Error connecting to MongoDB: " + error);
   });
-const cuestionarySchema = mongoose.Schema({
+const questionarySchema = mongoose.Schema({
     name: String,
     email: String,
     age: Number,
@@ -25,5 +27,5 @@ const cuestionarySchema = mongoose.Schema({
 
 
 })
-module.exports.model = mongoose.model("schema", cuestionarySchema);
+module.exports.model = mongoose.model("schema", questionarySchema);
 
