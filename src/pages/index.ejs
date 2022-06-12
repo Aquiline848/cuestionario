@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuestionary</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/lux/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="m-lg-auto d-flex container-lg">
+      <div class="form-group row">
+        <div class="col-md-12">
+          <h1>Cuestionary</h1>
+          <form action="/api/v1/postdata" method="post">
+            <label for="name" class="form-label">Nombre</label>
+            <input class="form-control" type="text" name="Name" id="name" placeholder="Name" required/>
+            <label for="email" class="form-label">Email</label>
+            <input class="form-control" type="email" name="Email" id="email" placeholder="myemail@gmail.com" required/>
+            <label for="age" class="form-label">edad</label>
+            <input class="form-control" type="number" name="Age" id="age" placeholder="18" required />
+            <label for="guanahani" class="form-label">¿Cual fue el primer sitio que visito Cristóbal Colón?</label>
+            <input class="form-control" type="text" name="Guanahani" id="guanahani" required/>
+            <label for="puertorico" class="form-label">¿Por que Puerto Rico recibe ese nombre?</label>
+            <input class="form-control" type="text" name="Puertorico" id="puertorico" placeholder="" required/>
+            <label for="puertorico" class="form-label">¿Con cuantas caravelas partió Colon hacía las Indias?</label>
+            <input class="form-control" type="number" name="Caravelas" id="caravelas" placeholder="" required/>
+            <label for="from" class="form-label">¿Desde que puerto partió Colón?</label>
+            <input class="form-control" type="text" name="From" id="from" placeholder="" required/>
+            <label for="liked" class="form-label">¿Cuanto te ha gustado la sección? 0/10</label>
+            <input class="form-control" type="number" name="Liked" id="liked" placeholder="" required/>
+            <input type="submit" class="btn btn-primary col-md-12 mt-3" value="Enviar" id="submit"/>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

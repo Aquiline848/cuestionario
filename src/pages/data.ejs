@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/lux/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <% data.forEach(element => { %>
+        <div class="card mb-3">
+          <div class="card-header">
+            <h3 class="card-title">
+              <h4>Nombre</h4>
+              <%= element.name %>
+            </h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <h4>Email</h4>
+              <%= element.email %>
+            </p>
+            <p class="card-text">
+              <h4>Edad</h4>
+              <%= element.age %>
+            </p>
+            <p class="card-text">
+              <h4>¿Cual fue el primer sitio que visito Cristóbal Colón?</h4>
+              <%= element.guanahani %>
+            </p>
+            <p class="card-text">
+              <h4>¿Por que Puerto Rico recibe ese nombre?</h4>
+              <%= element.puerto_rico %>
+            </p>
+            <p class="card-text">
+              <h4>¿Con cuantas caravelas partió Colon hacía las Indias?</h4>
+              <%= element.cantidad_caravelas %>
+            </p>
+            <p class="card-text">
+              <h4>¿Desde que puerto partió Colón?</h4>
+              <%= element.from %>
+            </p>
+            <p class="card-text">
+              <h4>¿Cuanto te ha gustado la sección? 0/10</h4>
+              <%= element.liked %>
+            </p>
+            <form method="get" action="/api/v1/delete/<%= element._id%>">
+              <input type="submit" class="btn btn-danger" value="Eliminar" />
+          </div>
+        </div>
+        <% }); %> 
+
+    </div>
+  </body>
+</html>
