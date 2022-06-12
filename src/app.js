@@ -14,5 +14,5 @@ app.use('/', router);
 
 
 app.listen(80, () => {
-    console.log('Server running on port 8080');
+    console.log('Server running on port 80');
 })
