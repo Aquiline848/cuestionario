@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../../db/db');
 
 router.post('/api/v1/postdata', async function (req, res, next) {
-    const {Name, Age, Email, Guanahani, Puertorico, Carabelas, From, Liked} = req.body;
+    const {Name, Age, Email, Guanahani, Puertorico, Carabelas, First, From, Liked} = req.body;
     res.render('goback1')
     const newCuestionary = new db.model({
         name: Name,
