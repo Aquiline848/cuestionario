@@ -1,2 +1,2 @@
 # cuestionario
-Cuestionario historia moderna colegio HH. Maristas
+:x: Not for non-educative purposes. ©️ Mario Rivas Reinoso 2022
